@@ -16,7 +16,7 @@ $mess = "<p>AUCTION ITEM $item succesfully created</p>";
 <html>
 	<head><title> process </title></head>
 	<body>
-	<?php echo "$mess" ?>;
+	<?php echo "$mess" ?>
 	<p> <a href="menu.php"> MENU </a></p>	
 	</body>
 </html>

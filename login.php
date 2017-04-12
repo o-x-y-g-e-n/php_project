@@ -19,7 +19,7 @@ if(isset($_GET['m']))
 	<br />
 	<input type="submit" name="button" id="button" value="submit" />
 	</p>
-	<p> <a href="index.html">HOME </a> </p>
+	<p> <a href="index.php">HOME </a> </p>
 	</form>
 </body>
 </html>	
