@@ -1,0 +1,74 @@
+man 2 write ( internal commands)
+man 3 printf(external commands)
+// writitng
+--------------------------------
+int x = write(1,"hello",sizeof("hello"));
+	
+-----------------------------------
+// read string
+char c[10];
+	int r = read(0,&c,sizeof(c));
+	int y = write(1,&c,r);
+------------------------------------------
+// cat command
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+int main()
+{
+	while(1)
+	{
+		char c[10];
+		int r = read(0,&c,sizeof(c));
+		int y = write(1,&c,r);
+	}
+	return 0;
+}
+
+------------------------------------------
+//reading from file and writing to terminal
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+int main()
+{
+	char buff[1000];
+	int x = open("abc",0);
+	int y = read(x,&buff,sizeof(buff));
+	int z = write(1,&buff,y);
+	return 0;
+}
+-------------------------------------------------
+// cat extended
+int main(int argv,char* argc[])
+{
+	char buff[100000];
+	int temp = argv;
+	while(temp != 0)
+	{
+		int x = open(argc[temp],0);
+		int y = read(x,&buff,sizeof(buff));
+		int z = write(1,&buff,y);
+		temp--;
+	}
+	return 0;
+}
+----------------------------------------------------
+// read from one file and write or append into another
+int main(int argc,char* argv[])
+{
+	char buff[1000];
+	int r1 = open(argv[2],O_RDONLY);
+	int r2 = read(r1,&buff,sizeof(buff));
+	int w1 = open(argv[1],O_WRONLY | O_APPEND);
+	int w2 = write(w1,&buff,r2);
+	return 0;
+}
+------------------------------------------------
+bzero --> to clean buffer
+------------------------------------------
+
