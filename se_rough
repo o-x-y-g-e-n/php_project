@@ -1,0 +1,17 @@
+traveller
+1) packages search
+2) feedback
+3) register
+-- if he login succesfuly ---
+customer
+1) login
+2) SEARCH OR view package
+3) booking
+4) if booking --> cancellation
+5) if booking --> payement
+6) feedback
+7) show my packages
+8) total seats --> 30
+	< 30-> please choose other date
+9)travelled flag = 1;
+	
