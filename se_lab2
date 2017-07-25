@@ -1,0 +1,69 @@
+Lab 2 --> write requirements for the project ALMADESTINO
+-> write major functionalities
+ + full sentence, keep 'system' as the subject of the sentence
+ + Identify functional requirements, write i/p, o/p and description
+ -> work on sub requirements
+ eg. R1
+   -- R11
+   -- R12
+   -- R13 etc
+-----------------------------============------------------------------  
+			      ALMADESTINO
+-> Major functionalities :
+ > System allows you to search packages ; Fiter them as per your need.
+ > System allows you to book a package as per your select date and time to select place.
+ > Our System even provides the facility to cancel booking with 80% cashback.
+ > Go Cashless ! Pay online.
+ 
+-> Functional Requirements
+ > R1: System provides facility to a vendor to add a package.
+     R2_1 :
+      => Description : System checks if user is logged in or not
+      => I/P : Username & Password
+      => O/P :	Yes/No
+     R1_2 :
+      => Description : System checks if logged in user is a vendor or not
+      => I/P : Username & Password
+      => O/P : Yes/No
+     R1_3 :
+     => Description : System checks for the travelling date
+     =>	I/P :  Date/TimeStamp 
+     =>	O/P : Valid or Invalid.
+     R1_4 :	
+     => Description : System checks for the starting place 
+     => I/P :City, state & Country limited to Asia
+     => O/P : Valid or Invalid
+     R1_5 :
+     => Description : System checks for the reaching place
+     => I/P :City, state & Country limited to Asia
+     => O/P : Valid or Invalid
+     R1_6 :
+     => Description : System checks for cost
+     => I/P : Integer
+     => O/P : Valid or Invalid
+ > R2 : System allows you to book a package 
+      R2_1 :
+      => Description : System checks if user is logged in or not
+      => I/P : Username & Password
+      => O/P :	Yes/No
+      R2_2 :
+      => Description : System checks if the package exists
+      => I/P : Package info.
+      => O/P : Yes/No      
+      R2_2 :
+     => Description : If package exists, check its availablity
+     => I/P : Package info.
+     => O/P : Yes/No 	
+ > R3 :  System allows you to cancel a package
+      R3_1 :
+      => Description : System checks if user is logged in or not
+      => I/P : Username & Password
+      => O/P :	Yes/No
+     R3_2 :
+     => Description : System checks if user has booked that package or not
+     => I/P : Package Info.
+     => O/P : Yes/No
+-------------------------------------------------------------------------------------------
+      
+      
+     
