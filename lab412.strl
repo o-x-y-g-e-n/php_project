@@ -1,0 +1,11 @@
+module lab412:
+input I;
+output count:integer;
+
+var count:=0:integer in
+every I do
+count:=count+1;
+emit count(count);
+end
+end var
+end module

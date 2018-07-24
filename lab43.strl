@@ -1,0 +1,22 @@
+module lab43:
+input A,S;
+output E,F;
+
+var count := 0 : integer in
+loop
+present A then 
+           if count < 5 then
+            count := count + 1 end
+			end;
+present S then 
+           if count > 0 then
+             count := count - 1 end 
+			 end;
+if count = 0 then
+         emit E end;
+if count = 5 then 
+        emit F end;
+pause
+end
+end
+end module

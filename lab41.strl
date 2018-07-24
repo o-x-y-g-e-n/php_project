@@ -1,0 +1,8 @@
+module lab41:
+input I;
+output count:=0:integer;
+every I do
+   emit count(pre(?count)+1)
+ end every
+end module 
+

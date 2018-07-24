@@ -1,0 +1,16 @@
+module lab42:
+input cm,sec;
+relation cm#sec;
+output speed : integer;
+loop
+var dist := 0 : integer in
+abort
+every cm do
+dist := dist+1;
+end every
+when sec do
+emit speed(dist)
+end abort
+end var
+end loop
+end module

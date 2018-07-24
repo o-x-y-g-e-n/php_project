@@ -1,0 +1,38 @@
+module lab44:
+input TEA,COFFEE,C;
+output TEA_SERVED,COFFEE_SERVED,DENY;
+relation TEA#COFFEE;
+
+ var c:=0:integer in
+   loop
+     c:=0;
+       present C then
+	      present TEA then
+     		  c:=1;
+               end;			  
+			  end;
+     
+	 present C then
+           present COFFEE then 
+		     c:=2 
+			 end;
+			 end;
+			 
+       if c=0 then
+       emit DENY;
+       end;	   
+ 	  
+       if c=1 then 
+	   emit TEA_SERVED;
+	   end;
+	   
+	   if c=2 then
+	   emit COFFEE_SERVED;
+	   end;
+   	   
+	   
+pause
+end
+end
+end module
+	 
